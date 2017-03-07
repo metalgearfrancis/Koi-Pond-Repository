@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DLSU PC Reservation System - Laboratory</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><div>	
+				<img src="img/logo.png" alt="" style="width:54px;height:49px;">
+				<img src="img/dlsu-m.png" alt="" style="width:250px;height:48px;"></div></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html" style="color:white;font-size:15px;">Home</a> 
+                    </li>
+                    <li>
+                        <a href="adminlibrary.html" style="color:white;font-size:15px;">Library</a>
+                    </li>
+                    <li>
+                        <a href="adminlaboratory.html" style="color:white;font-size:15px;">Laboratory</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Features -->
+		
+        <div class="row text-center">
+			<div class="x_panel">
+                <div class="x_title">
+                  <h2>G302A Schedule</h2>
+				  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addclassmodal" style="float: right;">Add Class</button>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+                  
+                  <table class="table table-striped responsive-utilities jambo_table bulk_action">
+                    <thead>
+                      <tr class="headings">
+                        <th style="text-align: center !important">Course Code</th>
+						<th style="text-align: center !important">Section</th>
+						<th style="text-align: center !important">Day(s)</th>
+                        <th style="text-align: center !important">Start Time</th>
+						<th style="text-align: center !important">End Time</th>
+						<th style="text-align: center !important">Faculty</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+					<tr class="odd pointer">
+                        <td>SYSTIMP</td>
+                        <td>S14</td>
+						<td>MW</td>
+						<td>9:15 AM</td>
+						<td>10:45 AM</td>
+						<td>Mary Jane Arcilla</td>
+                    </tr>
+					<tr class="even pointer">
+                        <td>SW-ENGG</td>
+                        <td>S15</td>
+						<td>MW</td>
+						<td>12:45 PM</td>
+						<td>2:15 PM</td>
+						<td>Ryan Dimaunahan</td>
+                    </tr>	
+                    <tr class="odd pointer">
+                        <td>WEBTECH</td>
+                        <td>S15</td>
+						<td>MW</td>
+						<td>2:30 PM</td>
+						<td>4:00 PM</td>
+						<td>Danny Cheng</td>
+                    </tr>
+                    <tr class="even pointer">
+                        <td>ARCPLAN</td>
+                        <td>S16</td>
+						<td>TH</td>
+						<td>2:30 PM</td>
+						<td>4:00 PM</td>
+						<td>Gigi Cu</td>
+                    </tr>
+				 </table>
+                </div>
+            </div>
+
+        </div>
+		
+		    <div class="row text-center">
+			<div class="x_panel">
+                <div class="x_title">
+                  <h2>G302A PCs</h2>
+				  <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addpcmodal" style="float: right;">Add PC</button>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="x_content">
+                  <table class="table table-striped responsive-utilities jambo_table bulk_action">
+                    <thead>
+                      <tr class="headings">
+                        <th style="text-align: center !important">PC No.</th>
+                        <th style="text-align: center !important">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+					<tr class="even pointer">
+                        <td><img src="img/c1.jpg"></td>
+                        <td><a href="#" class="btn btn-primary">Remove</a></td>
+                    </tr>	
+                    <tr class="odd pointer">
+                        <td><img src="img/c2.jpg"></td>
+						<td><a href="#" class="btn btn-primary">Remove</a></td>
+                    </tr>
+                    <tr class="even pointer">
+                        <td><img src="img/c4.jpg"></td>
+						<td><a href="#" class="btn btn-primary">Remove</a></td>
+                    </tr>
+                    <tr class="odd pointer">
+                        <td><img src="img/c5.jpg"></td>
+                        <td><a href="#" class="btn btn-primary">Remove</a></td>
+					</tr>
+				 </table>
+                  
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+		
+		<!-- Add Class Modal -->
+			<div class="modal fade" id="addclassmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel"><center>Add Class</center></h4>
+						</div>
+						<div class="modal-body">
+							<div>
+								<form>
+									<label for="coursecode">Course Code:</label>
+									<input type="text" class="form-control" id="coursecode">
+									<label for="reason">Section:</label>
+									<input type="text" class="form-control" id="reason">
+									<label for="day">Day(s):</label>
+									  <select class="form-control" id="day">
+										<option></option>
+										<option>MW</option>
+										<option>TH</option>
+										<option>M</option>
+										<option>W</option>
+										<option>T</option>
+										<option>H</option>
+									  </select>
+									<label for="starttime">Start Time:</label>
+									<input type="time" class="form-control" id="starttime">
+									<label for="endtime">End Time:</label>
+									<input type="time" class="form-control" id="endtime">
+									<label for="faculty">Faculty:</label>
+									<input type="text" class="form-control" id="faculty">
+								</form>
+								<br>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!-- Add PC Modal -->
+			<div class="modal fade" id="addpcmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							<h4 class="modal-title" id="myModalLabel"><center>Add PC</center></h4>
+						</div>
+						<div class="modal-body">
+							<div>
+								<form>
+									<p><center>PC Added!</center></p>
+								</form>
+								<br>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">		
+			<div class="col-lg-12">
+                    <p><center>Copyright &copy; Your Website 2014</center></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	
+</body>
+
+</html>
